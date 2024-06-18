@@ -1,5 +1,3 @@
-### README.md
-
 # API Lambda para Dispositivo IoT
 
 Este proyecto contiene una función Lambda de AWS que interactúa con una tabla de DynamoDB para obtener y actualizar datos de un dispositivo IoT. La función se utiliza para procesar y devolver datos en un formato específico para una aplicación web.
