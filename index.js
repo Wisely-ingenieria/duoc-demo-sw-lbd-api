@@ -40,10 +40,12 @@ exports.handler = async (event) => {
             timeInterval: items[0].interval,
             alertActive: items[0].type === 'alert', // Suponiendo que 'type' puede ser 'alert' o 'normal'
             date: new Date(items[0].timestamp).toISOString(), // Convertir timestamp a fecha
-            liveValue: items[0].ppm,
+            temperatureValue: items[0].temperature,
+            humidityValue: items[0].humidity,
             history: items.map(item => ({
                 timestamp: new Date(item.timestamp).toISOString(),
-                value: item.ppm
+                temperature: item.temperature,
+                humidity: item.humidity,
             }))
         };
 
